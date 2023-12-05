@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform")
-    id("com.toasttab.protokt") version "1.0.0-alpha.10"
+    id("com.toasttab.protokt") version "1.0.0-beta.0"
 }
 
 kotlin {
@@ -13,6 +13,16 @@ kotlin {
         browser()
     }
 
+    sourceSets {
+        val jvmMain by getting {
+
+        }
+    }
+
+}
+
+tasks.withType<JavaCompile> {
+    enabled = false
 }
 
 tasks.named("allMetadataJar").get().dependsOn("extractProto")

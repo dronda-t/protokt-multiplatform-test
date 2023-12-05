@@ -1,7 +1,7 @@
 
 plugins {
     kotlin("jvm")
-    id("com.toasttab.protokt") version "1.0.0-alpha.10"
+    id("com.toasttab.protokt") version "1.0.0-beta.0"
 }
 
 dependencies {
