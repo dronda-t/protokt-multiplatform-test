@@ -14,11 +14,12 @@ kotlin {
     }
 
     sourceSets {
-        val jvmMain by getting {
-
-        }
+        commonMain {}
     }
 
+}
+dependencies {
+    protoktExtensions("com.toasttab.protokt:protokt-extensions-api:1.0.0-beta.0")
 }
 
 tasks.withType<JavaCompile> {
